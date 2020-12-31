@@ -1,0 +1,59 @@
+{% extends 'school/studentbase.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+<head>
+  <style media="screen">
+    .alert {
+      margin-left: 25%;
+      margin-right: 25%;
+      padding: 20px;
+      background-color: #f44336;
+      color: white;
+    }
+
+    .w3-panel p {
+      padding-top: 10px;
+    }
+
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .closebtn:hover {
+      color: black;
+    }
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<br>
+
+{%include 'school/student_dashboard_cards.html'%}
+
+<br><br>
+<div class="w3-panel w3-blue ">
+  <p>Notice Board</p>
+</div><br>
+{%for n in notice%}
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>{{n.date}} || By : {{n.by}}</strong><br> {{n.message}}
+</div>
+{%endfor%}
+
+
+
+
+{% endblock content %}

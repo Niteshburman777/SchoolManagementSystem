@@ -1,0 +1,111 @@
+{% extends 'school/teacherbase.html' %}
+{% block content %}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+
+</head>
+<div class="container">
+
+  <div class="row">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h6 class="panel-title">Attendance</h6>
+
+      </div>
+
+      <table class="table table-hover" id="dev-table">
+        <thead>
+
+          <tr>
+            <th>Class Name</th>
+            <th>Take Attendance</th>
+            <th>View Attendance</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td> One</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'one'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'one'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Two</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'two'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'two'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Three</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'three'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'three'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Four</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'four'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'four'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Five</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'five'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'five'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Six</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'six'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'six'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Seven</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'seven'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'seven'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Eight</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'eight'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'eight'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Nine</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'nine'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'nine'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Ten</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'ten'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'ten'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock content %}

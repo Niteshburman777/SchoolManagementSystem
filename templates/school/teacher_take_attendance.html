@@ -1,0 +1,78 @@
+{% extends 'school/teacherbase.html' %}
+{% load widget_tweaks %}
+{% block content %}
+
+<head>
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+
+    .btnSubmit {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<!--
+written By : sumit kumar
+facebook : fb.com/sumit.luv
+-->
+
+
+<form method="post">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h6 class="panel-title">Attendance</h6>
+
+        </div>
+
+        <table class="table table-hover" id="dev-table">
+          <thead>
+
+            <tr>
+              <th>Student Name</th>
+              <th>Present/Absent</th>
+            </tr>
+          </thead>
+
+
+          {% csrf_token %}
+          {%for student in students%}
+          <tr>
+            <td>{{student.get_name}}</td>
+            <td>{{aform.present_status}}</td>
+          </tr>
+          {%endfor%}
+
+
+
+        </table>
+        {% render_field aform.date class="form-control" placeholder="Enter Date mm/dd/yyyy" %}
+        <input type="submit" style="margin-left: 200px;
+                                        margin-top: 20px;
+                                        margin-bottom: 20px;
+                                        background-color: #ffec00;" name="submit" value="submit">
+      </div>
+    </div>
+  </div>
+</form>
+{% endblock content %}

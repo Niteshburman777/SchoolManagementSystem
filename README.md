@@ -32,7 +32,7 @@ Admin can announce notice also.
 - Install Python(3.7.6) (Dont Forget to Tick Add to Path while installing Python)
 - Open Terminal and Execute Following Commands :
 
-``` python -m pip install -r requirements. txt ```
+``` pip install django-widget-tweaks ```
 
 
 - Download This Project Zip Folder and Extract it

@@ -1,18 +1,7 @@
 # Schoolmanagement
 
 ---
-## screenshots
-### Homepage
-![homepage snap](https://github.com/sumitkumar1503/schoolmanagement/blob/master/static/screenshots/homepage.png?raw=true)
-### Admin Dashboard
-![dashboard snap](https://github.com/sumitkumar1503/schoolmanagement/blob/master/static/screenshots/adminhomepage.png?raw=true)
-### Admin Manage Teacher
-![invoice snap](https://github.com/sumitkumar1503/schoolmanagement/blob/master/static/screenshots/adminteacher.png?raw=true)
-### Attendance
-![doctor snap](https://github.com/sumitkumar1503/schoolmanagement/blob/master/static/screenshots/attendance.png?raw=true)
-### Teacher Dashboard
-![doctor snap](https://github.com/sumitkumar1503/schoolmanagement/blob/master/static/screenshots/teacher.png?raw=true)
----
+
 
 ## Functions
 ### Teacher
@@ -64,9 +53,5 @@ http://127.0.0.1:8000/
 EMAIL_HOST_USER = 'youremail@gmail.com'
 EMAIL_HOST_PASSWORD = 'your email password'
 EMAIL_RECEIVING_USER = 'youremail@gmail.com'
-```
-- Login to gmail through host email id in your browser and open following link and turn it ON
-```
-https://myaccount.google.com/lesssecureapps
 ```
 
